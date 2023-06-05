@@ -1,14 +1,22 @@
+<a name="readme-top"></a>
+
+<div align="center">
+
+  <h3><b>Vet-Clinic</b></h3>
+
+</div>
+
+<!-- TABLE OF CONTENTS -->
 # 📗 Table of Contents
 
-- [� Table of Contents](#-table-of-contents)
-- [📖 \[vet-clinic\] ](#-vet-clinic-)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 vet-clinic ](#-vet-clinic-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
-    - [Install](#install)
     - [Usage](#usage)
     - [Deployment](#deployment)
   - [👥 Authors ](#-authors-)
@@ -20,8 +28,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [vet-clinic] <a name="about-project"></a>
-
+# 📖 vet-clinic <a name="about-project"></a>
 
 **[vet-clinic]** is a relational database for a vet clinic. It has a table that stores animals' information.
 
@@ -40,8 +47,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **[Table animals has the following columns: id, name, date_of_birth, escape-attempts, neutered and weight_kg]**
 - **[You can insert some data into it]**
 - **[You can query it]**
@@ -52,8 +57,6 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
@@ -63,14 +66,6 @@ In order to run this project you need:
 - PostgreSQL.
 - Git bash.
 - GitHub Account.
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
 
 ### Setup
 Install PostgreSQL.
@@ -83,19 +78,6 @@ Example commands:
 ```sh
   cd my-folder
   git clone git@github.com:rosemutai/vet-clinic.git
-```
---->
-
-### Install
-
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
 ```
 --->
 
@@ -119,9 +101,7 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
-👤 **Author1**
+👤 **ROSE MUTAI**
 
 - GitHub: [@rosemutai](https://github.com/rosemutai)
 - Twitter: [@__chepngetich](https://twitter.com/__chepngetich)
@@ -151,9 +131,7 @@ Feel free to check the [issues page](https://github.com/rosemutai/vet-clinic/iss
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project please give it a star on github
+If you like this project please give it a star ⭐️ on github
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
