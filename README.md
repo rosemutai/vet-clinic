@@ -30,7 +30,7 @@
 
 # 📖 vet-clinic <a name="about-project"></a>
 
-**[vet-clinic]** is a relational database for a vet clinic. It has a table that stores animals' information.
+**vet-clinic** is a relational database for a vet clinic. It has a table that stores animals' information.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -47,9 +47,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Table animals has the following columns: id, name, date_of_birth, escape-attempts, neutered and weight_kg]**
-- **[You can insert some data into it]**
-- **[You can query it]**
+- **Table animals has the following columns: id, name, date_of_birth, escape-attempts, neutered and weight_kg**
+- **You can insert some data into it**
+- **You can query it**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
