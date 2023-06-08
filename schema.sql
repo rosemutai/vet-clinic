@@ -45,7 +45,7 @@ INSERT INTO new_table (animal_name, date_of_birth, escape_attempts, neutered, we
 SELECT animal_name, date_of_birth, escape_attempts, neutered, weight_kg, species
 FROM animals;
 
--- Rename the old table to a temporary name:
+-- Rename the old table to animals_backup
 ALTER TABLE animals RENAME TO animals_backup;
 
 -- Rename the new table to the original table name:
@@ -76,3 +76,35 @@ ALTER TABLE animals
 ADD CONSTRAINT fk_owners
 FOREIGN KEY(owners_id) 
 REFERENCES owners(id);
+
+-- Create a table named vets
+CREATE TABLE vets (
+  id SERIAL PRIMARY KEY,
+  vet_name VARCHAR(100) NOT NULL,
+  age INT NOT NULL,
+  date_of_graduation DATE NOT NULL
+);
+
+-- There is a many-to-many relationship between the tables species and vets:
+--  a vet can specialize in multiple species, and a species can have multiple vets specialized in it. 
+-- Create a "join table" called specializations to handle this relationship.
+CREATE TABLE specializations (
+  id SERIAL PRIMARY KEY,
+  vet_id INT NOT NULL,
+  species_id INT NOT NULL,
+  FOREIGN KEY (vet_id) REFERENCES vets (id) ON DELETE CASCADE,
+  FOREIGN KEY (species_id) REFERENCES species (id) ON DELETE CASCADE
+);
+
+-- There is a many-to-many relationship between the tables animals and vets: 
+-- an animal can visit multiple vets and one vet can be visited by multiple animals.
+--  Create a "join table" called visits to handle this relationship,
+--  it should also keep track of the date of the visit.
+CREATE TABLE visits (
+  id SERIAL PRIMARY KEY,
+  animal_id INT NOT NULL,
+  vet_id INT NOT NULL,
+  visit_date DATE NOT NULL,
+  FOREIGN KEY (animal_id) REFERENCES animals (id) ON DELETE CASCADE,
+  FOREIGN KEY (vet_id) REFERENCES vets (id) ON DELETE CASCADE
+);
