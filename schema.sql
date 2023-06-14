@@ -108,3 +108,26 @@ CREATE TABLE visits (
   FOREIGN KEY (animal_id) REFERENCES animals (id) ON DELETE CASCADE,
   FOREIGN KEY (vet_id) REFERENCES vets (id) ON DELETE CASCADE
 );
+
+
+-- week 2
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+-- change age column to allow NULL values 
+ALTER TABLE owners ALTER COLUMN age DROP NOT NULL;
+
+-- SELECT COUNT(*) FROM visits where animal_id = 4;
+SELECT COUNT(*) FROM visits where animal_id = 4;
+
+-- Find a way to decrease the execution time of the first query. (SELECT COUNT(*) FROM visits where animal_id = 4;)
+-- Indexing:  Index animal_id column in the visits table
+CREATE INDEX index_visits_animal_id ON visits (animal_id);
+
+-- SELECT * FROM visits where vet_id = 2;
+-- indexing
+CREATE INDEX index_visits_vet_id ON visits (vet_id);
+
+-- SELECT * FROM owners where email = 'owner_18327@mail.com';
+-- indexing
+CREATE INDEX index_owners_email ON owners (email);
