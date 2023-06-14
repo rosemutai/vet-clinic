@@ -30,7 +30,7 @@
 
 # 📖 vet-clinic <a name="about-project"></a>
 
-<img src="diagram.png" alt="database schema diagram">
+<img src="./diagram.png" alt="database schema diagram">
 
 **vet-clinic** is a relational database for a vet clinic. It has a table that stores animals' information.
 
